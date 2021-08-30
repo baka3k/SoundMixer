@@ -30,20 +30,12 @@ soundConcat.concatMP3File(
 
 ### Sound Mixer  
 ```  
-/**  
-* Mix sound, Reduce the volume in the parts with voice  
-*/  
-fun mix(musicPath: String?, voicePath:String, listSoundInfo: ArrayList<SoundInfo>, duration: Int): String {  
-
-val mixedFolder = buildMixedFolder()
-val outputMixing = mixedSoundFileName(mixedFolder)
-
 // Mix sound  
 val soundMixer = SoundMixer(applicationContext.cacheDir)
 val inputFile1 = "/storage/emulated/0/Download/A.mp3"
 val inputFile2 = "/storage/emulated/0/Download/B.mp3"
 val outPutFileMixed = "/storage/emulated/0/Download/mixed.wav"
-val duration = 15000 // mix and split 15 seconds
+val duration = 15000 // mix and split 15 seconds - time to mix
 soundMixer.mix(
         inputFile1 = inputFile1,
         inputFile2 = inputFile2,
