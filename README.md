@@ -16,7 +16,7 @@ Target of this project is not performance while mix/concat/boost audio, It just 
 Ensure that your application has WRITE_EXTERNAL_STORAGE permission for run sample app
 
 ### Sound concat  
-```kotlin  
+```  
 val soundConcat = SoundConcat(applicationContext.cacheDir)
 val inputFile1 = "/storage/emulated/0/Download/A.mp3"
 val inputFile2 = "/storage/emulated/0/Download/B.mp3"
@@ -29,7 +29,7 @@ soundConcat.concatMP3File(
 ```
 
 ### Sound Mixer  
-```kotlin 
+```  
 /**  
 * Mix sound, Reduce the volume in the parts with voice  
 */  
@@ -49,7 +49,7 @@ soundMixer.mix(
         inputFile2 = inputFile2,
         outPutMixing = outPutFileMixed,
         duration = duration
-    )  
+    )
 }  
 ```  
 
