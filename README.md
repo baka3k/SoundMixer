@@ -24,7 +24,7 @@ allprojects {
 Add the dependency
 ```groovy
 dependencies {
-    implementation "com.github.baka3k:BlurImage:1.0.1"
+    implementation "com.github.baka3k:SoundMixer:0.0.1"
 }
 ```
 ## Usage   
